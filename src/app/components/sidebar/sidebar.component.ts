@@ -10,10 +10,10 @@ import { SidebarComponent as BaseSidebarComponent } from 'theme/components/sideb
 export class SidebarComponent extends BaseSidebarComponent {
   public title = 'BANCO TODO CREDITO';
   public menu = [
-    { name: 'Classic Dashboard', link: '/app/dashboard', icon: 'dashboard' },
-    { name: 'Custom Dashboard', link: '/app/dashboard-custom', icon: 'view_quilt' },
+    { name: 'Dashboard', link: '/app/dashboard', icon: 'dashboard' },
+    { name: 'Creditos', link: '/app/dashboard-custom', icon: 'view_quilt' },
     {
-      name: 'UI',
+      name: 'Ahorros',
       children: [
         ...[
           'buttons',
@@ -34,17 +34,17 @@ export class SidebarComponent extends BaseSidebarComponent {
       ],
       icon: 'view_comfy',
     },
-    { name: 'Components', link: '/app/components', icon: 'developer_board' },
+    { name: 'Cuentas Monetarias', link: '/app/components', icon: 'developer_board' },
     { name: 'Account', link: '/app/forms', icon: 'person' },
     {
-      name: 'Maps', icon: 'map', children: [
+      name: 'Sucursales', icon: 'map', children: [
         { name: 'Simple map', link: '/maps/simple' },
         { name: 'Advanced map', link: '/maps/advanced' },
       ],
     },
-    { name: 'Charts', link: '/app/charts', icon: 'multiline_chart' },
+    { name: 'Remesas', link: '/app/charts', icon: 'multiline_chart' },
     {
-      name: 'Pages', children: [
+      name: 'Seguros', children: [
         { name: 'Sign in', link: '/pages/login' },
         { name: 'Sign up', link: '/pages/sign-up' },
         { name: 'Forgot password', link: '/pages/forgot-password' },
